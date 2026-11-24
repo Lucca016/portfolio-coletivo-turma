@@ -1,0 +1,30 @@
+:root {
+  --unifor-blue-dark: #002855;
+  --unifor-blue-primary: #004b8d;
+  --unifor-blue-accent: #009fe3;
+  --unifor-blue-soft: #e6f2fa;
+  --unifor-bg: #f4f7fa;
+  --unifor-surface: #ffffff;
+  --unifor-text-main: #1e293b;
+  --unifor-text-muted: #526071;
+  --unifor-border: #dce4ec;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--unifor-bg);
+  color: var(--unifor-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
