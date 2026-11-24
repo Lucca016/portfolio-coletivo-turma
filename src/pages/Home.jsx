@@ -37,8 +37,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Grid de Equipes */}
+      {/* Conteúdo Principal */}
       <main style={styles.main}>
+        {/* Seção Foto Oficial da Turma */}
+        <section style={styles.photoSection}>
+          <div style={styles.photoHeader}>
+            <span style={styles.photoBadge}>Registro Oficial • CCT</span>
+            <h2 style={styles.photoTitle}>Turma de Desenvolvimento de Plataformas Web</h2>
+            <p style={styles.photoSubtitle}>
+              Equipes reunidas no laboratório do Centro de Ciências Tecnológicas (UNIFOR) durante a execução do Desafio Integrador.
+            </p>
+          </div>
+
+          <figure style={styles.figure}>
+            <img
+              src="/turma-unifor.jpeg"
+              alt="Foto oficial da turma de Ciência da Computação da UNIFOR no laboratório"
+              style={styles.teamPhoto}
+            />
+            <figcaption style={styles.figcaption}>
+              Universidade de Fortaleza (UNIFOR) • Desafio Integrador — Portfólio Coletivo (2026)
+            </figcaption>
+          </figure>
+        </section>
+
+        {/* Grid de Equipes */}
         <div style={styles.sectionHeader}>
           <div>
             <h2 style={styles.sectionTitle}>Vitrine das Equipes</h2>
@@ -159,6 +182,63 @@ const styles = {
     maxWidth: '1160px',
     margin: '0 auto',
     padding: '3rem 1.5rem',
+  },
+  photoSection: {
+    backgroundColor: 'var(--unifor-surface)',
+    borderRadius: '16px',
+    border: '1px solid var(--unifor-border)',
+    padding: '2rem',
+    marginBottom: '3.5rem',
+    boxShadow: '0 6px 20px rgba(0, 40, 85, 0.06)',
+  },
+  photoHeader: {
+    textAlign: 'center',
+    maxWidth: '720px',
+    margin: '0 auto 1.5rem',
+  },
+  photoBadge: {
+    display: 'inline-block',
+    backgroundColor: 'var(--unifor-blue-soft)',
+    color: 'var(--unifor-blue-primary)',
+    fontSize: '0.75rem',
+    fontWeight: '700',
+    textTransform: 'uppercase',
+    letterSpacing: '0.05em',
+    padding: '0.3rem 0.85rem',
+    borderRadius: '999px',
+    marginBottom: '0.6rem',
+  },
+  photoTitle: {
+    fontSize: '1.55rem',
+    fontWeight: '700',
+    color: 'var(--unifor-blue-dark)',
+    marginBottom: '0.4rem',
+  },
+  photoSubtitle: {
+    color: 'var(--unifor-text-muted)',
+    fontSize: '0.95rem',
+  },
+  figure: {
+    margin: 0,
+    borderRadius: '12px',
+    overflow: 'hidden',
+    border: '1px solid var(--unifor-border)',
+    backgroundColor: '#001d3d',
+  },
+  teamPhoto: {
+    width: '100%',
+    maxHeight: '540px',
+    objectFit: 'cover',
+    objectPosition: 'center 35%',
+    display: 'block',
+  },
+  figcaption: {
+    padding: '0.85rem 1.25rem',
+    backgroundColor: 'var(--unifor-blue-dark)',
+    color: '#cbd5e1',
+    fontSize: '0.85rem',
+    textAlign: 'center',
+    fontWeight: '500',
   },
   sectionHeader: {
     display: 'flex',
