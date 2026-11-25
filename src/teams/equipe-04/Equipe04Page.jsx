@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Equipe04Page.module.css';
 import renanFoto from './assets/renan-rabelo.jpg';
 import daviFoto from './assets/davi-laurentino.jpg';
+import ziltomFoto from './assets/ziltom-machado.jpg';
 
 const VIDEO_EMBED_URL = 'https://www.youtube.com/embed/2jWW-xBryf4';
 
@@ -28,7 +29,7 @@ const MEMBROS = [
     papel: 'Back-end & Banco de Dados',
     habilidades: ['Node.js', 'Express', 'MySQL', 'SQL'],
     bio: 'Graduando em Ciência da Computação na UNIFOR. Contribuiu com a modelagem do banco e as regras da API do UniCheck.',
-    foto: null, // TODO: adicionar foto em ./assets e importar no topo
+    foto: ziltomFoto,
     link: null,
   },
   {
