@@ -1,6 +1,6 @@
+
 import EquipeBasePage from '../teams/equipe-base/EquipeBasePage';
-// As demais equipes importarão suas páginas aqui, ex:
-// import Equipe01Page from '../teams/equipe-01/Equipe01Page';
+import Equipe01Page from '../teams/equipe-01/Equipe01Page';
 
 export const teamsConfig = [
   {
@@ -12,14 +12,18 @@ export const teamsConfig = [
     members: ['João Marcelo Ferreira Santos', 'Lucca Maia', 'Leonardo Sampaio', 'Paulo Henrique'],
     component: EquipeBasePage,
   },
-  // EXEMPLO PARA AS PRÓXIMAS EQUIPES COPIAREM:
-  // {
-  //   id: 'equipe-01',
-  //   slug: 'equipe-01',
-  //   name: 'Equipe 01',
-  //   title: 'Título do Projeto da Equipe 01',
-  //   description: 'Breve descrição do que a página apresenta.',
-  //   members: ['Integrante 1', 'Integrante 2'],
-  //   component: Equipe01Page,
-  // },
+  {
+    id: 'equipe-01',
+    slug: 'equipe-01',
+    name: 'ENAHub',
+    title: 'Apresentação do projeto ENAHub',
+    description: 'Conheça nossa aplicação e os integrantes da equipe.',
+    members: [
+      'Cauã Medeiros',
+      'Pedro Pompeu',
+      'João Victor Alves Lima',
+      'Marco Cauã',
+    ],
+    component: Equipe01Page,
+  },
 ];
