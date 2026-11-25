@@ -4,9 +4,7 @@ import styles from './Equipe04Page.module.css';
 import renanFoto from './assets/renan-rabelo.jpg';
 import daviFoto from './assets/davi-laurentino.jpg';
 
-// TODO: cole aqui o link embed do vídeo da equipe (ex.: https://www.youtube.com/embed/ID_DO_VIDEO).
-// Enquanto estiver vazio, a página mostra um aviso no lugar do player.
-const VIDEO_EMBED_URL = '';
+const VIDEO_EMBED_URL = 'https://www.youtube.com/embed/2jWW-xBryf4';
 
 const MEMBROS = [
   {
