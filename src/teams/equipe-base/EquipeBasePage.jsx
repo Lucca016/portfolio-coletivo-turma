@@ -87,7 +87,7 @@ export default function EquipeBasePage() {
           {/* TROQUE O ID ABAIXO PELO LINK EMBED DO VÍDEO DO KIDDOS NO YOUTUBE */}
           <iframe
             style={styles.iframe}
-            src="https://www.youtube.com/embed/SqcY0GlETPk"
+            src="https://www.youtube.com/embed/90IqsU_jf3E"
             title="Apresentação do Projeto KIDDOS - Portal de Jogos Educativos"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
