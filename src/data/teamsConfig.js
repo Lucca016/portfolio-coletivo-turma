@@ -1,6 +1,5 @@
 import EquipeBasePage from '../teams/equipe-base/EquipeBasePage';
-// As demais equipes importarão suas páginas aqui, ex:
-// import Equipe01Page from '../teams/equipe-01/Equipe01Page';
+import Equipe07Page from '../teams/equipe-07/index.jsx';
 
 export const teamsConfig = [
   {
@@ -9,17 +8,26 @@ export const teamsConfig = [
     name: 'Equipe Base & Integração',
     title: 'Arquitetura, Integração e Deploy do Portfólio',
     description: 'Responsável pela fundação React + Vite, roteamento dinâmico, revisão de PRs e publicação na Vercel.',
-    members: ['João Marcelo Ferreira Santos', 'Lucca Maia', 'Leonardo Sampaio', 'Paulo Henrique'],
+    members: [
+      'João Marcelo Ferreira Santos',
+      'Lucca Maia',
+      'Leonardo Sampaio',
+      'Paulo Henrique'
+    ],
     component: EquipeBasePage,
   },
-  // EXEMPLO PARA AS PRÓXIMAS EQUIPES COPIAREM:
-  // {
-  //   id: 'equipe-01',
-  //   slug: 'equipe-01',
-  //   name: 'Equipe 01',
-  //   title: 'Título do Projeto da Equipe 01',
-  //   description: 'Breve descrição do que a página apresenta.',
-  //   members: ['Integrante 1', 'Integrante 2'],
-  //   component: Equipe01Page,
-  // },
+  {
+    id: 'equipe-07',
+    slug: 'equipe-07',
+    name: 'Equipe 07 — FitManager',
+    title: 'FitManager — Gestão de Academias e Treinos',
+    description: 'Plataforma web para gerenciamento de alunos, prescrição de treinos e acompanhamento da evolução física.',
+    members: [
+      'Cairo Forte Ferreira Filho',
+      'Henrique José Barbosa Vitalino Carneiro Mello',
+      'Marcos Gentili Oliveira',
+      'Valter Expedito Ribeiro da Silva'
+    ],
+    component: Equipe07Page,
+  },
 ];
