@@ -3,6 +3,7 @@ import Equipe01Page from '../teams/equipe-01/Equipe01Page';
 import Equipe03Page from '../teams/equipe-03/Equipe03Page';
 import Equipe04Page from '../teams/equipe-04/Equipe04Page';
 import Equipe05Page from '../teams/equipe-05/Equipe05Page';
+import Equipe07Page from '../teams/equipe-07/index.jsx';
 // As demais equipes importarão suas páginas aqui, ex:
 // import Equipe02Page from '../teams/equipe-02/Equipe02Page';
 
@@ -56,6 +57,20 @@ export const teamsConfig = [
     description: 'Sistema web de pedidos para uma distribuidora de Fortaleza: loja por CPF, balcão de atacado por CNPJ e painel do dono. Com vídeo de apresentação e ficha técnica da equipe.',
     members: ['Vitor Costa Maia', 'Caio Barsi de Holanda', 'Christian Davi Ribeiro Lopes', 'João Victor dos Santos Carvalho', 'Victor Custódio Holanda'],
     component: Equipe05Page,
+  },
+  {
+    id: 'equipe-07',
+    slug: 'equipe-07',
+    name: 'Equipe 07 — FitManager',
+    title: 'FitManager — Gestão de Academias e Treinos',
+    description: 'Plataforma web para gerenciamento de alunos, prescrição de treinos e acompanhamento da evolução física.',
+    members: [
+      'Cairo Forte Ferreira Filho',
+      'Henrique José Barbosa Vitalino Carneiro Mello',
+      'Marcos Gentili Oliveira',
+      'Valter Expedito Ribeiro da Silva',
+    ],
+    component: Equipe07Page,
   },
   // EXEMPLO PARA AS PRÓXIMAS EQUIPES COPIAREM:
   // {
