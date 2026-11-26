@@ -1,5 +1,6 @@
 import EquipeBasePage from '../teams/equipe-base/EquipeBasePage';
 import Equipe01Page from '../teams/equipe-01/Equipe01Page';
+import Equipe04Page from '../teams/equipe-04/Equipe04Page';
 import Equipe05Page from '../teams/equipe-05/Equipe05Page';
 // As demais equipes importarão suas páginas aqui, ex:
 // import Equipe02Page from '../teams/equipe-02/Equipe02Page';
@@ -27,6 +28,15 @@ export const teamsConfig = [
       'Marco Cauã',
     ],
     component: Equipe01Page,
+  },
+  {
+    id: 'equipe-04',
+    slug: 'equipe-04',
+    name: 'Equipe 04',
+    title: 'UniCheck — Empréstimos da Secretaria do CCT',
+    description: 'Sistema web para pedir, aprovar, retirar e devolver materiais, salas e chaves da Secretaria do CCT, com alertas de atraso.',
+    members: ['Renan Rabelo de Oliveira', 'Davi Laurentino', 'Zíltom Machado', 'Vinicius Estevam'],
+    component: Equipe04Page,
   },
   {
     id: 'equipe-05',
