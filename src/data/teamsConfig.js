@@ -1,5 +1,6 @@
 import EquipeBasePage from '../teams/equipe-base/EquipeBasePage';
 import Equipe01Page from '../teams/equipe-01/Equipe01Page';
+import Equipe03Page from '../teams/equipe-03/Equipe03Page';
 import Equipe04Page from '../teams/equipe-04/Equipe04Page';
 import Equipe05Page from '../teams/equipe-05/Equipe05Page';
 // As demais equipes importarão suas páginas aqui, ex:
@@ -28,6 +29,15 @@ export const teamsConfig = [
       'Marco Cauã',
     ],
     component: Equipe01Page,
+  },
+  {
+    id: 'equipe-03',
+    slug: 'equipe-03',
+    name: 'UNIFOR Exchange',
+    title: 'Plataforma Web de Apoio à Mobilidade Acadêmica Internacional',
+    description: 'Sistema completo (React, Node.js e MySQL) que reúne países, universidades conveniadas e oportunidades de intercâmbio da UNIFOR, com mapa, quiz de perfil e checklist de preparação.',
+    members: ['Catarina Thaís Lima Pimentel', 'Thaís Câncio Rodrigues de Góis', 'Hafiz Oliveira Costa', 'Brena Vitória Aguiar Lemos', 'Enzo Fernandes Paulino'],
+    component: Equipe03Page,
   },
   {
     id: 'equipe-04',
