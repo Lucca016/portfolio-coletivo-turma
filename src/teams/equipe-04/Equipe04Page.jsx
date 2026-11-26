@@ -4,6 +4,7 @@ import styles from './Equipe04Page.module.css';
 import renanFoto from './assets/renan-rabelo.jpg';
 import daviFoto from './assets/davi-laurentino.jpg';
 import ziltomFoto from './assets/ziltom-machado.jpg';
+import viniciusFoto from './assets/vinicius-estevam.jpg';
 
 const VIDEO_EMBED_URL = 'https://www.youtube.com/embed/2jWW-xBryf4';
 
@@ -37,7 +38,7 @@ const MEMBROS = [
     papel: 'Testes & Revisão IA',
     habilidades: ['Vitest', 'TypeScript', 'Revisão de código', 'IA generativa'],
     bio: 'Graduando em Ciência da Computação na UNIFOR. Contribuiu com testes, revisão das entregas e uso de IA no projeto.',
-    foto: null, // TODO: adicionar foto em ./assets e importar no topo
+    foto: viniciusFoto,
     link: null,
   },
 ];
