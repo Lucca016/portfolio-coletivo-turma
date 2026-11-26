@@ -6,9 +6,9 @@ export const teamsConfig = [
   {
     id: 'equipe-base',
     slug: 'equipe-base',
-    name: 'Equipe Base & Integração',
-    title: 'Arquitetura, Integração e Deploy do Portfólio',
-    description: 'Responsável pela fundação React + Vite, roteamento dinâmico, revisão de PRs e publicação na Vercel.',
+    name: 'Equipe Base & KIDDOS',
+    title: 'KIDDOS — Portal de Jogos Educativos & Arquitetura Base',
+    description: 'Catálogo web de jogos educativos da UNIFOR para a Escola Maria de Carvalho Martins e fundação técnica do Portfólio Coletivo.',
     members: ['João Marcelo Ferreira Santos', 'Lucca Maia', 'Leonardo Sampaio', 'Paulo Henrique'],
     component: EquipeBasePage,
   },
