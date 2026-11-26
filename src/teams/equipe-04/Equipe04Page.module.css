@@ -107,6 +107,30 @@
   border-radius: 6px;
 }
 
+.heroCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  background: #fff;
+  color: var(--unifor-blue-dark);
+  font-weight: 700;
+  padding: 0.7rem 1.3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.heroCta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+.heroCta:focus-visible {
+  outline: 3px solid #7dd3fc;
+  outline-offset: 3px;
+}
+
 /* Cards de seção */
 .card {
   background: var(--unifor-surface);
@@ -156,6 +180,13 @@
 
 .paragraph + .paragraph {
   margin-top: 0.85rem;
+}
+
+.inlineLink {
+  color: var(--unifor-blue-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .paragraph code {
@@ -404,7 +435,8 @@
 .badges,
 .title,
 .subtitle,
-.stackItem {
+.stackItem,
+.heroCta {
   animation: eq04-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -419,6 +451,11 @@
 .stackItem {
   animation-delay: calc(0.3s + var(--i, 0) * 0.05s);
   transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.heroCta {
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
 }
 
 .stackItem:hover {
@@ -477,6 +514,7 @@
   .title,
   .subtitle,
   .stackItem,
+  .heroCta,
   .playIcon {
     animation: none;
   }
@@ -491,7 +529,8 @@
   .page .member:hover,
   .member:hover .avatar,
   .backLink:hover,
-  .stackItem:hover {
+  .stackItem:hover,
+  .heroCta:hover {
     transform: none;
   }
 }

@@ -6,6 +6,7 @@ import daviFoto from './assets/davi-laurentino.jpg';
 import ziltomFoto from './assets/ziltom-machado.jpg';
 import viniciusFoto from './assets/vinicius-estevam.jpg';
 
+const UNICHECK_URL = 'https://unicheck-web.vercel.app/';
 const VIDEO_EMBED_URL = 'https://www.youtube.com/embed/2jWW-xBryf4';
 
 const MEMBROS = [
@@ -128,6 +129,9 @@ export default function Equipe04Page() {
             </li>
           ))}
         </ul>
+        <a href={UNICHECK_URL} target="_blank" rel="noreferrer" className={styles.heroCta}>
+          Acessar o UniCheck <span aria-hidden="true">↗</span>
+        </a>
       </header>
 
       {/* 01. Vídeo com referência */}
@@ -179,6 +183,10 @@ export default function Equipe04Page() {
             O <strong>UniCheck</strong> substitui o caderno de empréstimos da Secretaria do CCT. Cada
             pedido tem protocolo, a disponibilidade é verificada no servidor e todo o histórico fica
             registrado no banco MySQL. Esta página apresenta o sistema e quem o construiu.
+            O sistema está publicado em{' '}
+            <a href={UNICHECK_URL} target="_blank" rel="noreferrer" className={styles.inlineLink}>
+              unicheck-web.vercel.app
+            </a>.
           </p>
           <p className={styles.paragraph}>
             <strong>Como usamos IA:</strong> apoio na revisão de código e de regras de negócio, na
