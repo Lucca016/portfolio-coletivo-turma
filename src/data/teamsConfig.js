@@ -1,11 +1,11 @@
+
 import EquipeBasePage from '../teams/equipe-base/EquipeBasePage';
 import Equipe01Page from '../teams/equipe-01/Equipe01Page';
+import Equipe02Page from '../teams/equipe-02/LandingPage.jsx';
 import Equipe03Page from '../teams/equipe-03/Equipe03Page';
 import Equipe04Page from '../teams/equipe-04/Equipe04Page';
 import Equipe05Page from '../teams/equipe-05/Equipe05Page';
 import Equipe07Page from '../teams/equipe-07/index.jsx';
-// As demais equipes importarão suas páginas aqui, ex:
-// import Equipe02Page from '../teams/equipe-02/Equipe02Page';
 
 export const teamsConfig = [
   {
@@ -30,6 +30,20 @@ export const teamsConfig = [
       'Marco Cauã',
     ],
     component: Equipe01Page,
+  },
+  {
+    id: 'equipe-02',
+    slug: 'equipe-02',
+    name: 'Equipe 02 — Work-Gest',
+    title: 'Work-Gest — Plataforma de Gestão Corporativa',
+    description: 'Sistema web desenvolvido para facilitar a gestão corporativa interna, organizando processos e atividades empresariais.',
+    members: [
+      'Davi Noronha',
+      'Victor Hugo Martins Ponceano',
+      'Pietro Maia',
+      'Guilherme Abreu',
+    ],
+    component: Equipe02Page,
   },
   {
     id: 'equipe-03',
@@ -72,14 +86,5 @@ export const teamsConfig = [
     ],
     component: Equipe07Page,
   },
-  // EXEMPLO PARA AS PRÓXIMAS EQUIPES COPIAREM:
-  // {
-  //   id: 'equipe-02',
-  //   slug: 'equipe-02',
-  //   name: 'Equipe 02',
-  //   title: 'Título do Projeto da Equipe 02',
-  //   description: 'Breve descrição do que a página apresenta.',
-  //   members: ['Integrante 1', 'Integrante 2'],
-  //   component: Equipe02Page,
-  // },
+ 
 ];
